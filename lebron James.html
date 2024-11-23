@@ -1,54 +1,32 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-    <title>Search Bar</title>
-    <meta name="viewport"
-          content="width=device-width,
-                   initial-scale=1">
-    <link rel="stylesheet" 
-          href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" 
-          href="./style.css">
-
-</head>
-
 <body>
-    <!-- Navbar items -->
-    <div id="navlist">
-        <a href="#">Home</a>
-        <a href="#">Our Products</a>
-        <a href="#">Careers</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
 
-        <!-- search bar right align -->
-        <div class="search">
-            <form action="#">
-                <input type="text" placeholder="Search Courses"
-                       name="search">
-                <button>
-                    <i class="fa fa-search"></i>
-                </button>
-            </form>
-        </div>
-    </div>
+<h1>The form element</h1>
 
-    <!-- logo with tag -->
-    <div class="content">
-        <h1>GeeksforGeeks</h1>
-        <b>A Computer Science Portal for Geeks</b>
-        <p>
-            How many times were you frustrated while
-            looking out for a good collection of
-            programming/algorithm/interview questions?
-            What did you expect and what did you get?
-            This portal has been created to provide
-            well written, well thought and well
-            explained solutions for selected questions.
-        </p>
-    </div>
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+
+<!-- Sample HTML Form -->
+<form action="mailto:contact@yourdomain.com"
+method="POST"
+enctype="multipart/form-data"
+name="EmailForm">
+    Name:<br>
+    <input type="text" size="19" name="Contact-Name"><br><br>
+    Email:<br>
+    <input type="email" name="Contact-Email"><br><br> 
+    Message:<br> 
+    <textarea name="Contact-Message" rows="6″ cols="20″>
+    </textarea><br><br> 
+    <button type="submit" value="Submit">Send</button>
+</form>  
 </body>
-
 </html>
